@@ -8,11 +8,12 @@ This is a Coq implementation of the QWIRE quantum programming language, describe
 
 Rennela and Staton's [Classical Control, Quantum Circuits and Linear Logic in Enriched Category Theory][5] provides a categorical semantics for QWIRE.
 
-QWIRE is compatible with Coq versions 8.12 - 8.15.
+QWIRE is tested to be compatible with Coq versions 8.15.2.
 
 This project depends on [QuantumLib](https://github.com/inQWIRE/QuantumLib), which you can install with: 
 ```
-opam pin coq-quantumlib https://github.com/inQWIRE/QuantumLib.git
+opam repo add coq-released https://coq.inria.fr/opam/released
+opam install coq-quantumlib.1.1.0
 ```
 Run `make` to compile the core (preliminary and implementation) files and `make all` to compile proofs of QWIRE programs. Run `make qasm` to compile the files that convert QWIRE to QASM. We recommend using [Company Coq][9] with QWIRE in light of its support for unicode.  
 
