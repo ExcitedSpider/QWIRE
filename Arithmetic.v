@@ -10,6 +10,8 @@ Require Import Denotation.
 Require Import Composition.
 Require Import Monad.
 Require Import Program.
+(* Added this for referencing `Var` *)
+Require Import Contexts.
 
 Require Import List.
 Import ListNotations.
